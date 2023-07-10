@@ -1,16 +1,26 @@
 body {
   font-family: 'Roboto';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.32px;
 }
 
 :root {
   --iriscolor: #4d5ae5;
   --navyblue: #2e2f42;
   --navcolor: black;
-  --oceancolor: #2196f3;
-  --whitecolor: white;
+  --oceancolor: #404bbf;
+  --whitecolor: #ffffff;
   --slatecolor: #434455;
   --cornflowercolor: #e7e9fc;
   --cloudcolor: #f4f4fd;
+  --greencolor: #31d0aa;
+  --lightslatecolor: #8e8f99;
+  --navybluemodalcolor: #2e2f42;
+  --greycolor: #2e2f42;
+  --dairycolor: #fcfcfc;
 }
 
 .lists {
@@ -25,7 +35,6 @@ body {
   color: var(--navyblue, #2e2f42);
   font-family: Raleway;
   font-size: 18px;
-  font-style: normal;
   font-weight: 800;
   line-height: 21px;
   letter-spacing: 0.54px;
@@ -40,6 +49,10 @@ body {
   color: var(--navyblue);
 }
 
+.studio-footer {
+  color: var(--cloudcolor);
+}
+
 .header-address-link {
   color: var(--slatecolor);
 }
@@ -48,22 +61,16 @@ body {
 .header-address-link:focus {
   color: var(--oceancolor);
 }
-.current {
-  color: var(--iriscolor);
-}
 
 .header-link {
   color: var(--navyblue);
-  font-family: inherit;
-  font-size: 16px;
-  font-style: normal;
   font-weight: 500;
-  line-height: 24px;
   letter-spacing: 0.32px;
 }
 
 .header-link:hover,
-.header-link:focus {
+.header-link:focus,
+.header-link:active {
   color: var(--oceancolor);
 }
 
@@ -71,19 +78,17 @@ body {
   color: var(--iriscolor);
 }
 
-.header-link:active {
-  color: red;
-}
-
 .hero-section {
   background-color: var(--navyblue);
 }
 
+.footer-section {
+  background-color: var(--navyblue);
+}
 .hero-title {
   color: var(--whitecolor);
   text-align: center;
   font-size: 56px;
-  font-style: normal;
   font-weight: 700;
   line-height: 60px;
   letter-spacing: 1.12px;
@@ -94,47 +99,39 @@ body {
   background: var(--iris, #4d5ae5);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   color: var(--white, #fff);
-  font-family: inherit;
-  font-size: 16px;
-  font-style: normal;
   font-weight: 500;
-  line-height: 24px;
   letter-spacing: 0.64px;
+  border: none;
+  cursor: pointer;
 }
 
 .hero-button:hover,
 .hero-button:focus {
-  color: var(--navcolor);
-  cursor: pointer;
-  background-color: teal;
+  background-color: var(--oceancolor);
 }
 
 .titles {
-  font-family: inherit;
   font-size: 20px;
-  font-style: normal;
   font-weight: 500;
-  line-height: 24px;
   letter-spacing: 0.4px;
   color: var(--navyblue);
 }
 
 .bottom-text {
-  font-family: Roboto;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0.32px;
   color: var(--slatecolor);
 }
 
+.section-grey {
+  background-color: var(--cloudcolor);
+}
+
+.footer-bottom-text {
+  color: var(--cloud, #f4f4fd);
+}
 .section-title {
   color: var(--navyblue, #2e2f42);
   text-align: center;
-  font-family: inherit;
   font-size: 36px;
-  font-style: normal;
   font-weight: 700;
   line-height: 40px;
   letter-spacing: 0.72px;
@@ -142,27 +139,28 @@ body {
 }
 
 /* CSS for Portfolio */
-.menu-item {
+.filter-item {
   border-radius: 4px;
   border: 1px solid var(--cornflower, #e7e9fc);
   background: var(--cloud, #f4f4fd);
   color: var(--iris, #4d5ae5);
-  font-family: inherit;
-  font-size: 16px;
-  font-style: normal;
   font-weight: 500;
-  line-height: 24px;
   letter-spacing: 0.64px;
-}
-
-.menu-item:hover {
   cursor: pointer;
 }
 
 .active {
-  border-radius: 4px;
+  background: var(--iriscolor);
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
+    0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
+  color: var(--whitecolor);
+  border-color: var(--oceancolor);
+}
+
+.filter-item:hover {
   background: var(--ocean, #404bbf);
   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
     0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
   color: var(--whitecolor);
+  border-color: var(--oceancolor);
 }
